@@ -417,41 +417,42 @@
 
                           <hr>
                     {% if product.available == True %}
-                            <form id="add-cart" method="POST">
-                                {% csrf_token %}
-
-                                <!-- انتخاب تعداد با دکمه‌های + و - -->
-                                <div class="single__product__quantity">
-                                    <div class="qty-container">
-                                        <button class="qty-btn-minus btn-qty" type="button">-</button>
-                                        <input type="text" name="{{ form.quantity.name }}" value="1" class="input-qty" id="product-quantity" inputmode="numeric">
-                                        <button class="qty-btn-plus btn-qty" type="button">+</button>
-                                    </div>
-                                </div>
-
-                                <!-- انتخاب رنگ -->
-                                <div class="form-group">
-                                    <label for="{{ form.color.id_for_label }}">{{ form.color.label }}</label>
-                                    {{ form.color }}
-                                </div>
-
-                                <br>
-
-                                <!-- دکمه افزودن به سبد خرید -->
-                                <a class="default__button" href="#" id="submit-link">
-                                    <i class="fas fa-shopping-cart"></i> افزودن به سبد خرید
-                                </a>
-                            </form>
-
-
-                            <hr>
+{#                            <form id="add-cart" method="POST">#}
+{#                                {% csrf_token %}#}
+{##}
+{#                                <!-- انتخاب تعداد با دکمه‌های + و - -->#}
+{#                                <div class="single__product__quantity">#}
+{#                                    <div class="qty-container">#}
+{#                                        <button class="qty-btn-minus btn-qty" type="button">-</button>#}
+{#                                        <input type="text" name="{{ form.quantity.name }}" value="1" class="input-qty" id="product-quantity" inputmode="numeric">#}
+{#                                        <button class="qty-btn-plus btn-qty" type="button">+</button>#}
+{#                                    </div>#}
+{#                                </div>#}
+{##}
+{#                                <!-- انتخاب رنگ -->#}
+{#                                <div class="form-group">#}
+{#                                    <label for="{{ form.color.id_for_label }}">{{ form.color.label }}</label>#}
+{#                                    {{ form.color }}#}
+{#                                </div>#}
+{##}
+{#                                <br>#}
+{##}
+{#                                <!-- دکمه افزودن به سبد خرید -->#}
+{#                                <a class="default__button" href="#" id="submit-link">#}
+{#                                    <i class="fas fa-shopping-cart"></i> افزودن به سبد خرید#}
+{#                                </a>#}
+{#                            </form>#}
+{##}
+{##}
+{##}
+{#                            <hr>#}
                         {% endif %}
 
 
 
                             <p class="single__product__car">
                                         <img src="{% static 'img/car/car.webp' %}" height="25" alt="تاریخ تحویل">
-                                        تاریخ تحویل تخمینی : <strong>09-  12 آگوست، 2024.</strong>
+{#                                        تاریخ تحویل تخمینی : <strong>09-  12 آگوست، 2024.</strong>#}
                             </p>
 {#                            <div class="single__return__menu">#}
 {#                                <h6>خلاصه قوانین بازگشت</h6>#}
@@ -492,12 +493,6 @@
     </div>
 </div>
 <!-- single__product__end -->
-
-
-
-
-
-
 
             <!-- contact__section__start  -->
             <div class="single__product__contact sp_bottom_80">
@@ -589,27 +584,27 @@
         </main>
 
 
-        <!-- JS here -->
-            <script src="{% static 'js/vendor/modernizr-3.5.0.min.js' %}"></script>
-            <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+            <!-- JS here -->
+                <script src="{% static 'js/vendor/modernizr-3.5.0.min.js' %}"></script>
+                <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
 
-            <script src="{% static 'js/popper.min.js' %}"></script>
-            <script src="{% static 'js/bootstrap.min.js' %}"></script>
-            <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
-            <script src="{% static 'js/one-page-nav-min.js' %}"></script>
-            <script src="{% static 'js/slick.min.js' %}"></script>
-            <script src="{% static 'js/jquery.meanmenu.min.js' %}"></script>
-            <script src="{% static 'js/ajax-form.js' %}"></script>
-            <script src="{% static 'js/wow.min.js' %}"></script>
-            <script src="{% static 'js/jquery.scrollUp.min.js' %}"></script>
-            <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
-            <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
-            <script src="{% static 'js/waypoints.min.js' %}"></script>
-            <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
-            <script src="{% static 'js/fontawesome.min.js' %}"></script>
-            <script src="{% static 'js/plugins.js' %}"></script>
-            <script src="{% static 'js/main.js' %}"></script>
-            <script>
+                <script src="{% static 'js/popper.min.js' %}"></script>
+                <script src="{% static 'js/bootstrap.min.js' %}"></script>
+                <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+                <script src="{% static 'js/one-page-nav-min.js' %}"></script>
+                <script src="{% static 'js/slick.min.js' %}"></script>
+                <script src="{% static 'js/jquery.meanmenu.min.js' %}"></script>
+                <script src="{% static 'js/ajax-form.js' %}"></script>
+                <script src="{% static 'js/wow.min.js' %}"></script>
+                <script src="{% static 'js/jquery.scrollUp.min.js' %}"></script>
+                <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+                <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+                <script src="{% static 'js/waypoints.min.js' %}"></script>
+                <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+                <script src="{% static 'js/fontawesome.min.js' %}"></script>
+                <script src="{% static 'js/plugins.js' %}"></script>
+                <script src="{% static 'js/main.js' %}"></script>
+                <script>
                 $(document).ready(function () {
                     $("#logout-link").click(function (event) {
                         event.preventDefault(); // جلوگیری از تغییر صفحه
@@ -642,10 +637,16 @@
 
     // تابع بررسی مقدار و اعمال محدودیت
     function validateQuantity(input) {
-        var value = convertToEnglishDigits(input.val());  // تبدیل اعداد فارسی به انگلیسی
-        var quantity = parseInt(value) || 1;
+        var value = convertToEnglishDigits(input.val());
 
-        if (quantity < 1) {
+        // اگر مقدار ورودی خالی باشد، تغییری اعمال نشود
+        if (value === "") {
+            return;
+        }
+
+        var quantity = parseInt(value);
+
+        if (isNaN(quantity) || quantity < 1) {
             quantity = 1;
         } else if (quantity > 50) {
             quantity = 50;
@@ -654,31 +655,13 @@
         input.val(quantity);
     }
 
-    // افزایش تعداد
-    $(".qty-btn-plus").click(function () {
-        var input = $("#product-quantity");
-        var currentValue = parseInt(convertToEnglishDigits(input.val())) || 1;
-        if (currentValue < 50) {
-            input.val(currentValue + 1);
-        }
-    });
-
-    // کاهش تعداد
-    $(".qty-btn-minus").click(function () {
-        var input = $("#product-quantity");
-        var currentValue = parseInt(convertToEnglishDigits(input.val())) || 1;
-        if (currentValue > 1) {
-            input.val(currentValue - 1);
-        }
-    });
-
     // بررسی مقدار هنگام تایپ در ورودی
     $("#product-quantity").on("input", function () {
         validateQuantity($(this));
     });
 
     // ارسال فرم هنگام کلیک روی "افزودن به سبد خرید"
-    $("#submit-link").click(function (event) {
+    $("#submit-link").off("click").on("click", function (event) {
         event.preventDefault();
         var input = $("#product-quantity");
         validateQuantity(input);  // اطمینان از مقدار صحیح قبل از ارسال
@@ -700,6 +683,7 @@
         });
     });
 });
+
 
 </script>
 

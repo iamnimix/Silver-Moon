@@ -4,6 +4,7 @@ app_name = 'productions'
 
 urlpatterns = [
     path('', views.LandingPage.as_view(), name='landing_page'),
+    path('zohoverify/verifyforzoho.html', views.zoho_verification, name='zoho'),
     path("search/", views.SearchResultsView.as_view(), name="search_results"),
     path('products/', views.ProductList.as_view(), name='product_list'),
     path('categories/', views.CategoryList.as_view(), name='category_list'),

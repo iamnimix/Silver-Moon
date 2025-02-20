@@ -103,3 +103,7 @@ class SearchResultsView(ListView):
             Q(name__icontains=query)
         )
         return object_list
+
+
+def zoho_verification(request):
+    return render(request, 'verifyforzoho.html', {})
